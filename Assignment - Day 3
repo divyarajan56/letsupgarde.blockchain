@@ -1,0 +1,28 @@
+##CODE
+pragma solidity >=0.4.17 <0.7.0;
+
+contract land{
+    
+        string owneroftheland;
+        
+        function land( string newowner) public{
+            
+            owneroftheland = newowner;
+        }
+        
+        function setDetaisl(string newowner)public{
+            owneroftheland = newowner;
+        }
+    
+            function getDetail() public view returns(string) {
+        
+        return(owneroftheland);
+    }
+    
+    
+}
+
+
+
+##MY DEAR SAI SIR, PLEASE FIND WORKING IN THE LINK PROVIDED BELOW :")))
+https://remix.ethereum.org/#optimize=false&evmVersion=null&version=soljson-v0.4.17+commit.bdeb9e52.js
