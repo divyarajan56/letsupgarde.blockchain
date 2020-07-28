@@ -1,0 +1,32 @@
+##CODE
+pragma solidity ^0.4.21 <0.6.12;
+
+contract ReportCard{
+    
+        string public name;
+        string public rollno;
+        string public batch;
+        string public marks;
+        string public status;
+        
+        function ReportCard( string newname, string newrollno, string newbatch, string newmarks, string newstatus) public{
+            
+            name = newname;
+            rollno = newrollno;
+            batch = newbatch;
+            marks = newmarks;
+            status = newstatus;
+            
+        }
+      
+            function getstudentreportcardDetails() public view returns(string, string, string, string, string) {
+        
+        return(name, rollno, batch, marks, status);
+    }
+       
+}
+
+
+
+##TEST DEPLOYMENT OF THE SMART CONTRACT -
+0xf4e716be44334A9E6AA962713a226f572a0abAa7   in     https://ropsten.etherscan.io/address/0xf4e716be44334a9e6aa962713a226f572a0abaa7
